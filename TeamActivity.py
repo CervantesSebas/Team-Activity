@@ -11,6 +11,8 @@ if number == answer:
     print ("Well done you guessed it right ")
 elif number > answer :
     print ("Please guess lower")
+    print ("The correct number was:", answer)
 elif number < answer:
     print ("Please guess higher")
+    print ("The correct number was:", answer)
   
