@@ -6,7 +6,7 @@
 import random
 
 number = int(input("Please guess number 1-10; "))
-answer = answer = random.randint(1,10)
+answer = random.randrange(1,10)
 if number == answer:
     print ("Well done you guessed it right ")
 elif number > answer :
