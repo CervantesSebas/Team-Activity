@@ -7,12 +7,13 @@ import random
 
 number = int(input("Please guess number 1-10; "))
 answer = random.randrange(1,10)
+while number > answer:
+    print (f"Please guess lower")
+    number = int(input("Please guess number 1-10; "))
+while number < answer:
+    print (f"Please guess higher")
+    number = int(input("Please guess number 1-10; "))
+    
 if number == answer:
     print ("Well done you guessed it right ")
-elif number > answer :
-    print ("Please guess lower")
-    print ("The correct number was:", answer)
-elif number < answer:
-    print ("Please guess higher")
-    print ("The correct number was:", answer)
   
